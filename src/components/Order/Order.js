@@ -23,6 +23,5 @@ const Order = props => {
     </div>
   );
 };
-///testing
 
 export default Order;
