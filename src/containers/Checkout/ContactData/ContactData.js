@@ -95,7 +95,6 @@ class ContactData extends Component {
       },
     },
     formIsValid: false,
-    loading: false,
   };
 
   orderHandler = event => {
@@ -112,6 +111,7 @@ class ContactData extends Component {
       price: this.props.price,
       orderData: formData,
     };
+
     this.props.onOrderBurger(order);
   };
 
@@ -209,7 +209,7 @@ class ContactData extends Component {
 
 const mapStateToProps = state => {
   return {
-    ing: state.burgerBuilder.ingredients,
+    ings: state.burgerBuilder.ingredients,
     price: state.burgerBuilder.totalPrice,
     loading: state.order.loading,
   };
