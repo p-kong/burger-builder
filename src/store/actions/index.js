@@ -16,3 +16,5 @@ export {
   fetchOrdersFail,
   fetchOrdersSuccess,
 } from './order';
+
+export { authStart, authSuccess, authFail, auth, logout } from './auth';
